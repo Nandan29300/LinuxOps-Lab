@@ -19,13 +19,13 @@ This project automates and simulates real enterprise Linux server administration
 
 ```text
 linuxops-lab
-├── users/
-├── groups/
-├── permissions/
-├── ownership/
-├── monitoring/
+├── module-1-users/
+├── module-2-groups/
+├── module-3-permissions/
+├── module-4-ownership/
+├── module-5-monitoring/
+├── module-6-runbooks/
 ├── reports/
-└── runbooks/
 ```
 
 | Directory | Purpose |
@@ -47,16 +47,16 @@ git clone https://github.com/YOURNAME/linuxops-lab
 cd linuxops-lab
 
 ### Create a user
-sudo bash users/create-user.sh john developers
+sudo bash module-1-users/create-user.sh john developers
 
 ### Set department permissions
-sudo bash permissions/grant-access.sh
+bash module-3-permissions/grant-access.sh
 
 ### Run health report
 bash monitoring/process-monitor.sh
 
 ### Audit file ownership
-sudo bash ownership/audit-ownership.sh /opt/company
+bash module-4-ownership/audit-ownership.sh
 
 ---
 
