@@ -42,21 +42,39 @@ linuxops-lab
 
 ## 🚀 How to Run:
 
-### Clone the repo
-- git clone https://github.com/github-username/linuxops-lab.git
-- cd linuxops-lab
+### Setup
+git clone https://github.com/Nandan29300/LinuxOps-Lab.git
+cd LinuxOps-Lab
+mkdir -p reports
 
-### Create a user
-- sudo bash module-1-users/create-user.sh john developers
+### Module 1 — User Management
+sudo bash module-1-users/create-user.sh john developers
+sudo bash module-1-users/create-user.sh sarah hr
+sudo bash module-1-users/create-user.sh ram finance
+sudo bash module-1-users/lock-user.sh sarah
+sudo bash module-1-users/unlock-user.sh sarah
+sudo bash module-1-users/delete-user.sh ram
 
-### Set department permissions
-- bash module-3-permissions/grant-access.sh
+### Module 2 — Group Management
+sudo bash module-2-groups/create-group.sh devops
+sudo bash module-2-groups/assign-user.sh john devops
 
-### Run health report
-- bash monitoring/process-monitor.sh
+### Module 3 — Permissions
+bash module-3-permissions/grant-access.sh
+bash module-3-permissions/revoke-access.sh company/finance
 
-### Audit file ownership
-- bash module-4-ownership/audit-ownership.sh
+### Module 4 — Ownership
+bash module-4-ownership/audit-ownership.sh
+bash module-4-ownership/set-ownership.sh company/hr $USER $USER
+
+### Module 5 — Monitoring
+bash module-5-monitoring/process-monitor.sh
+
+### Verify all reports generated
+cat reports/user-actions.log
+cat reports/permission-audit.log
+cat reports/ownership-audit.log
+cat reports/process-report-$(date +%Y-%m-%d).txt
 
 ---
 
