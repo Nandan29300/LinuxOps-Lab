@@ -43,7 +43,7 @@ linuxops-lab
 ## 🚀 How to Run:
 
 ### Clone the repo
-- git clone https://github.com/YOURNAME/linuxops-lab
+- git clone https://github.com/github-username/linuxops-lab.git
 - cd linuxops-lab
 
 ### Create a user
