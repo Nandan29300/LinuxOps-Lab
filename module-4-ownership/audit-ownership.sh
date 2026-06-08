@@ -1,5 +1,5 @@
 #!/bin/bash
-DIRECTORY=${1:-/opt/company}
+DIRECTORY=${1:-company}
 
 echo "===== Ownership Audit: $DIRECTORY =====" | tee reports/ownership-audit.log
 echo "Date: $(date)" | tee -a reports/ownership-audit.log
