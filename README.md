@@ -43,9 +43,9 @@ linuxops-lab
 ## 🚀 How to Run:
 
 ### Setup
-git clone https://github.com/Nandan29300/LinuxOps-Lab.git
-cd LinuxOps-Lab
-mkdir -p reports
+- git clone https://github.com/Nandan29300/LinuxOps-Lab.git
+- cd LinuxOps-Lab
+- mkdir -p reports
 
 ### Module 1 — User Management
 sudo bash module-1-users/create-user.sh john developers
