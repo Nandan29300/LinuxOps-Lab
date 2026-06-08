@@ -43,31 +43,28 @@ linuxops-lab
 ## 🚀 How to Run:
 
 ### Clone the repo
-git clone https://github.com/YOURNAME/linuxops-lab
-cd linuxops-lab
+- git clone https://github.com/YOURNAME/linuxops-lab
+- cd linuxops-lab
 
 ### Create a user
-sudo bash module-1-users/create-user.sh john developers
+- sudo bash module-1-users/create-user.sh john developers
 
 ### Set department permissions
-bash module-3-permissions/grant-access.sh
+- bash module-3-permissions/grant-access.sh
 
 ### Run health report
-bash monitoring/process-monitor.sh
+- bash monitoring/process-monitor.sh
 
 ### Audit file ownership
-bash module-4-ownership/audit-ownership.sh
+- bash module-4-ownership/audit-ownership.sh
 
 ---
 
-## 📸 Screenshots
-[paste your terminal output screenshots here]
-
 ## 📚 Concepts Covered
-- Linux user and group management (Day 9)
-- File permissions with chmod (Day 10)
-- File ownership with chown (Day 11)
-- Process monitoring with ps, top (Day 2)
-- File I/O and log generation (Day 6)
-- Runbook documentation (Day 5)
+- Linux user and group management
+- File permissions with chmod
+- File ownership with chown
+- Process monitoring with ps, top
+- File I/O and log generation
+- Runbook documentation
 
